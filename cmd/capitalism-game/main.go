@@ -5,8 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	read "github.com/the-bets/capitalism-game/pkg/data_handling/read"
-	write "github.com/the-bets/capitalism-game/pkg/data_handling/write"
+	"github.com/the-bets/capitalism-game/pkg/data"
 )
 
 func main() {
@@ -24,6 +23,7 @@ func main() {
 		log.Fatalf("Error reading from text file: %s\n", err)
 		return
 	}
+
 	err = write.WriteFile(cik_lines, "cik_list.txt")
 	if err != nil {
 		log.Fatalf("Error writing to cik_lines.txt: %s", err)
