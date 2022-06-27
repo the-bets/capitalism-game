@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-
-	"github.com/the-bets/capitalism-game/pkg/data"
 )
 
 func main() {
@@ -18,17 +16,16 @@ func main() {
 	)
 
 	// begin reading cik data to []string and writing to as-of-now empty cik_list.txt
-	cik_lines, err := read.ReadFile("https://www.sec.gov/Archives/edgar/cik-lookup-data.txt")
-	if err != nil {
-		log.Fatalf("Error reading from text file: %s\n", err)
-		return
-	}
-
-	err = write.WriteFile(cik_lines, "cik_list.txt")
-	if err != nil {
-		log.Fatalf("Error writing to cik_lines.txt: %s", err)
-	}
-	return
+	// cik_lines, err := data.ReadFile("https://www.sec.gov/Archives/edgar/cik-lookup-data.txt")
+	// if err != nil {
+	// 	log.Fatalf("Error reading from text file: %s\n", err)
+	// 	return
+	// }
+	// err = data.WriteFile(cik_lines, "cik_list.txt")
+	// if err != nil {
+	// 	log.Fatalf("Error writing to cik_lines.txt: %s", err)
+	// }
+	// return
 }
 
 func landingPageHandler(w http.ResponseWriter, r *http.Request) {

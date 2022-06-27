@@ -1,3 +1,18 @@
 {
-    "go.inferGopath": false
+    "go.inferGopath": false,
+    "code-runner.runInTerminal": false,
+    "git.autofetch": true,
+    "python.venvPath": "python.venvPath",
+    "editor.formatOnSave": true,
+    "workbench.settings.editor": "json",
+    "terminal.integrated.inheritEnv": false,
+    "files.insertFinalNewline": true,
+    "go.formatTool": "goimports",
+    "todo-tree.tree.showScanModeButton": false,
+    "window.zoomLevel": 0,
+    "editor.renderWhitespace": "selection",
+    "files.trimTrailingWhitespace": true,
+    "update.mode": "manual",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active"
 }
